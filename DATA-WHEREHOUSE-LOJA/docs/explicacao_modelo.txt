@@ -1,0 +1,25 @@
+Passo a passo do processo do Data Warehouse
+1. Obtenção do banco de dados original
+•	Pegou o banco MySQL do projeto (base de dados fonte).
+________________________________________
+2. Processo ETL utilizando Python
+•	Criou scripts em Python para fazer a extração dos dados do banco MySQL.
+•	Realizou as transformações necessárias nos dados para adequá-los ao modelo do Data Warehouse.
+•	Preparou os dados para a carga no banco destino.
+________________________________________
+3. Conexão e migração de dados para Neon (PostgreSQL)
+•	Estabeleceu a conexão entre o banco local MySQL e o banco Neon (PostgreSQL na nuvem) utilizando scripts de automação.
+•	Carregou os dados transformados para o banco Neon.
+________________________________________
+4. Login e configuração no Neon
+•	Acessou a conta do Neon para gerenciar o banco de dados na nuvem.
+________________________________________
+5. Modelagem do Data Warehouse
+•	Criou um modelo estrela (star schema) no banco Neon:
+o	Definiu as tabelas fato e dimensão.
+o	Organizou a estrutura para otimização das consultas analíticas.
+________________________________________
+6. Criação de consultas avançadas no Neon
+•	Desenvolveu queries SQL avançadas para análises no Data Warehouse.
+•	Validou e testou as consultas para garantir que os dados estavam corretos e úteis para o negócio
+
